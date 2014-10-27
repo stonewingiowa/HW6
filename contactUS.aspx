@@ -6,9 +6,16 @@
 
 <head runat="server">
     <title>Web Contact Form</title>
+     <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
 </head>
 
 <body>
+     <div >
+        <h1>Wicked Easy Recipes</h1>
+    </div>
+    <div>
+        <h2>Using 5 Ingedients or less!</h2>
+    </div>
     <form id="form1" runat="server">
 
         <!-- Check to see if you are in postback.  If not, display the contact form. -->
@@ -16,11 +23,11 @@
 
         <br />
         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
-&nbsp;&nbsp;
+&nbsp;  |&nbsp;
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>
-        &nbsp;&nbsp;
+        &nbsp;  |&nbsp;
         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/About Us.aspx">About Us</asp:HyperLink>
-&nbsp;&nbsp;
+&nbsp;  |&nbsp;
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/contactUS.aspx">Contact</asp:HyperLink>
         <br />
         <br />
@@ -36,7 +43,7 @@
         
         <br />
         <br />
-        <asp:Button ID="sendMail" runat="server" Text="Send" />
+        <asp:Button ID="sendMail" runat="server" Text="Send Message" />
 
         <!-- If you are in postback, display the confirmation label. -->
         <%Else%>
@@ -47,5 +54,10 @@
         <%End If%>
 
     </form>
+    <br />
+    <br />
+    <div>
+            <footer> © 2013. 6K:183 Software Design & Development </footer>
+        </div>
 </body>
 </html>
