@@ -59,12 +59,12 @@
         &nbsp;  |&nbsp;
         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/About Us.aspx">About Us</asp:HyperLink>
 &nbsp;  |&nbsp;
-        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/contactUS.aspx">Contact</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
         <br />
         <asp:Label ID="lbl_deletedRecipe" runat="server"></asp:Label>
         <br />
         <br />
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="272px" CssClass="fromview">
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="272px" CssClass="fromview" >
             <EditItemTemplate>
                 <table>
                     <tr>
